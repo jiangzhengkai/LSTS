@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- === Header Starts === -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>LSTS</title>
+
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/font.css" rel="stylesheet" type="text/css">
+    <link href="./assets/style.css" rel="stylesheet" type="text/css">
+</head>
+<!-- === Header Ends === -->
+
+
+<body>
+
+
+<!-- === Home Section Starts === -->
+<div class="container">
+    <div class="title" style="margin: 20pt 50pt;">
+        Learning Where to Focus for Efficient Video Object Detection
+    </div>
+    <div class="author">
+        <a href="http://jiangzhengkai.github.io">Zhengkai Jiang</a><sup>1,2</sup>,&nbsp;
+        <a href="https://scholar.google.com.hk/citations?user=Lzb6A1sAAAAJ&hl=en">Yu Liu</a><sup>1,2</sup>,&nbsp;
+        <a href="https://ceyuan.me">Ceyuan Yang</a><sup>*,1</sup>,&nbsp;
+        <a href="https://scholar.google.com/citations?user=PP1HyToAAAAJ&hl=en">Jihao Liu</a><sup>2</sup>,&nbsp;
+        <a href="https://scholar.google.com/citations?user=miFIAFMAAAAJ&hl=en">Peng Gao</a><sup>1</sup>,&nbsp; \\
+        <a href="https://scholar.google.com/citations?user=pCY-bikAAAAJ&hl=en">Qian Zhang</a><sup>1</sup>,&nbsp;
+        <a href="https://sites.google.com/site/smxiang/">Shiming Xiang</a><sup>1</sup>,&nbsp;
+        <a href="https://www.researchgate.net/lab/STDAL-Chunhong-Pan">Chunhong Pan</a><sup>1</sup>&nbsp;
+    </div>
+    <div class="institution">
+        <sup>1</sup>National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences,
+        <sup>2</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences,
+        <sup>3</sup>The Chinese University of Hong Kong,
+        <sup>4</sup>Horizon Robotics <br>
+    </div>
+    <div class="link">
+        <a href="https://arxiv.org/pdf/xxxx.pdf" target="_blank">[Paper]</a>&nbsp;
+        <a href="https://github.com/jiangzhengkai/LSTS" target="_blank">[Code]</a>
+    </div>
+    <div class="teaser">
+        <img src="figures/framework.png">
+    </div>
+</div>
+<!-- === Home Section Ends === -->
+
+
+<!--====== Overview Section Starts ======-->
+<div class="container">
+    <div class="title">Overview</div>
+    <div class="body">
+        Previous approaches exploit to propagate and aggregate features across video frames by using optical flow-warping.  
+        However, directly applying image-level optical flow onto the high-level features might not establish accurate spatial correspondences. 
+        Therefore, a novel module called Learnable Spatio-Temporal Sampling (LSTS) has been proposed to learn semantic-level correspondences 
+        among frame features accurately. 
+        The sampled locations are first randomly initialized, then updated iteratively to find better spatial correspondences 
+        guided by detection supervision progressively. 
+        Besides, Sparsely Recursive Feature Updating (SRFU) module and Dense Feature Aggregation (DFA) module are also introduced to 
+        model temporal relations and enhance per-frame features, respectively. 
+        The proposed method achieves state-of-the-art performance on the ImageNet VID dataset with less computational complexity and real-time speed.
+    </div>
+</div>
+<!--====== Overview Section Ends ======-->
+
+
+<!--====== Results Section Starts ======-->
+<div class="container">
+    <div class="title">Results</div>
+    <div class="body">
+        <li><b>Quantitive Results</b></li>
+        <p>
+            Our TPN could achieve 77.2% mAP on the mainstream benchmarks of video object detection, which basically outperforms
+            other state-of-the-art methods considering accuracy and efficiency. More detailed comparison and ablation studie are presented in our paper.
+        </p>
+        <li><b>Visualization of the Statistic Distribution</b></li>
+        <p>
+            Figure 1 and Figure 2 indicate that the distribution of the learned sampling locations is much closer to the distribution calculated by the Datsets. </p>
+        <div class="teaser">
+            <img src="figures/visualization.png">
+        </div>
+
+    </div>
+</div>
+<!--====== Results Section Ends ======-->
+
+
+<!--====== References Section Starts ======-->
+<div class="container">
+    <div class="bibtex">Bibtex</div>
+    <pre>
+@inproceedings{jiang2020learning,
+  title   = {Learning Where to Focus for Efficient Video Object Detection}},
+  author  = {Jiang, Zhengkai and Liu, Yu and Yang, Ceyuan and Liu, Jihao and Gao, Peng and Zhang, Qian and Xiang, Shiming and Pan, Chunhong},
+  journal = {Proceedings of the IEEE European Conference on Computer Vision (ECCV)},
+  year    = {2020}
+}
+</pre>
+
+</body>
+</html>
+
