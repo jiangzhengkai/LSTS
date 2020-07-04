@@ -1,6 +1,6 @@
 # Learning Where to Focus for Efficient Video Object Detection
 
-![image](./docs/figures/framework.png)
+![image](./docs/figures/lsts.png)
 [Paper]
 [Project Page]
 
