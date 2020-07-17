@@ -1,8 +1,8 @@
 # Learning Where to Focus for Efficient Video Object Detection
 
 ![image](./docs/figures/lsts.png)
-[Paper]
-[Project Page]
+[Paper](https://arxiv.org/pdf/1911.05253.pdf)
+[Project Page](https://jiangzhengkai.github.io/LSTS/)
 
 ## News
 - Full codebase is coming soon.
